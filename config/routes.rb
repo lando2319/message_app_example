@@ -1,4 +1,10 @@
 MessageAppExample::Application.routes.draw do
+  resources :posts
+
+
+  resources :messages
+
+
   devise_for :users
 
   resources :users
