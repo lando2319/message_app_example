@@ -8,6 +8,10 @@
   <b>Name:</b>
   <%= @user.name %>
 </p>
+<br />
+<% @messages.each do |t| %>
+    <%= t.body %><br />
+<% end %>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
